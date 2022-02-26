@@ -12,7 +12,7 @@ import SwiftEntryKit
 public final class BYAlertManager: BYAlertManagerProtocol {
     
     // MARK: Properties
-    static let shared: BYAlertManager = .init()
+    public static let shared: BYAlertManager = .init()
     
     /// Use this function for showing toast messages.
     /// You can create your own ViewModel that confirms `BYToastAlertShowable` and pass in this function.
