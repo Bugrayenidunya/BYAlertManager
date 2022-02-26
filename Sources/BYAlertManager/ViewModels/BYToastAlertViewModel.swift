@@ -49,7 +49,7 @@ public struct BYToastAlertViewModel: BYToastAlertShowable {
 }
 
 // MARK: - Init
-extension BYToastAlertViewModel {
+public extension BYToastAlertViewModel {
     /// Init with default animations
     init(
         image: UIImage,
