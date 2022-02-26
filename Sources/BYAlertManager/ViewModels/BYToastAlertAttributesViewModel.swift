@@ -28,4 +28,27 @@ public struct BYToastAlertAttributesViewModel: BYToastAlertAttributesProtocol {
     
     public var exitAnimation: EKAttributes.Animation
     
+    /// Public init
+    public init(
+        position: EKAttributes.Position,
+        windowLevel: EKAttributes.WindowLevel,
+        displayDuration: EKAttributes.DisplayDuration,
+        positionConstraints: EKAttributes.PositionConstraints,
+        screenInteraction: EKAttributes.UserInteraction,
+        entryInteraction: EKAttributes.UserInteraction,
+        scrollBehaviour: EKAttributes.Scroll,
+        entranceAnimation: EKAttributes.Animation,
+        exitAnimation: EKAttributes.Animation
+    ) {
+        self.position = position
+        self.windowLevel = windowLevel
+        self.displayDuration = displayDuration
+        self.positionConstraints = positionConstraints
+        self.screenInteraction = screenInteraction
+        self.entryInteraction = entryInteraction
+        self.scrollBehaviour = scrollBehaviour
+        self.entranceAnimation = entranceAnimation
+        self.exitAnimation = exitAnimation
+    }
+    
 }
