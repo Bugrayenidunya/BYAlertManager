@@ -86,5 +86,38 @@ public extension BYToastAlertViewModel {
             translate: .init(duration: 0.3, anchorPosition: .bottom, spring: .init(damping: 1, initialVelocity: 0)),
             fade: .init(from: 0.5, to: 0.1, duration: 0.3))
     }
+    
+    /// İnit with attributes
+    init(
+        image: UIImage,
+        title: String?,
+        content: String,
+        titleFont: UIFont,
+        contentFont: UIFont,
+        backgroundColor: UIColor,
+        iconBackgroundColor: UIColor,
+        primaryButtonAction: (() -> Void)?,
+        dismissButtonAction: (() -> Void)?,
+        attributes: BYToastAlertAttributesProtocol
+    ) {
+        self.image = image
+        self.title = title
+        self.content = content
+        self.titleFont = titleFont
+        self.contentFont = contentFont
+        self.backgroundColor = backgroundColor
+        self.iconBackgroundColor = iconBackgroundColor
+        self.primaryButtonAction = primaryButtonAction
+        self.dismissButtonAction = dismissButtonAction
+        position = attributes.position
+        windowLevel = attributes.windowLevel
+        displayDuration = attributes.displayDuration
+        positionConstraints = attributes.positionConstraints
+        screenInteraction = attributes.screenInteraction
+        entryInteraction = attributes.entryInteraction
+        scrollBehaviour = attributes.scrollBehaviour
+        entranceAnimation = attributes.entranceAnimation
+        exitAnimation = attributes.exitAnimation
+    }
 }
 
