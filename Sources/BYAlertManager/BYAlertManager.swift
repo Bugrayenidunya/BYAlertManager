@@ -17,7 +17,7 @@ public final class BYAlertManager: BYAlertManagerProtocol {
     /// Use this function for showing toast messages.
     /// You can create your own ViewModel that confirms `BYToastAlertShowable` and pass in this function.
     /// You can declare behaviour of your alert using `attributes`
-    func show(_ toast: BYToastAlertShowable) {
+    public func show(_ toast: BYToastAlertShowable) {
         let toastAlertView = BYToastAlertView()
         toastAlertView.configure(with: toast)
         
