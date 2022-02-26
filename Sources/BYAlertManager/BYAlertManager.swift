@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import SwiftEntryKit
 
-final class BYAlertManager: BYAlertManagerProtocol {
+public final class BYAlertManager: BYAlertManagerProtocol {
     
     // MARK: Properties
     static let shared: BYAlertManager = .init()

@@ -8,7 +8,7 @@
 import UIKit
 import SwiftEntryKit
 
-protocol BYToastAlertShowable: BYAlertDismissable, BYToastAlertAttributesProtocol {
+public protocol BYToastAlertShowable: BYAlertDismissable, BYToastAlertAttributesProtocol {
     
     var image: UIImage { get }
     

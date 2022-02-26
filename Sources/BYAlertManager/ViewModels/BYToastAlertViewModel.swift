@@ -8,43 +8,43 @@
 import UIKit
 import SwiftEntryKit
 
-struct BYToastAlertViewModel: BYToastAlertShowable {
+public struct BYToastAlertViewModel: BYToastAlertShowable {
     
-    var image: UIImage
+    public var image: UIImage
     
-    var title: String?
+    public var title: String?
     
-    var content: String
+    public var content: String
     
-    var titleFont: UIFont
+    public var titleFont: UIFont
     
-    var contentFont: UIFont
+    public var contentFont: UIFont
     
-    var backgroundColor: UIColor
+    public var backgroundColor: UIColor
     
-    var iconBackgroundColor: UIColor
+    public var iconBackgroundColor: UIColor
     
-    var dismissButtonAction: (() -> Void)?
+    public var dismissButtonAction: (() -> Void)?
     
-    var primaryButtonAction: (() -> Void)?
+    public var primaryButtonAction: (() -> Void)?
     
-    var position: EKAttributes.Position
+    public var position: EKAttributes.Position
     
-    var windowLevel: EKAttributes.WindowLevel
+    public var windowLevel: EKAttributes.WindowLevel
     
-    var displayDuration: EKAttributes.DisplayDuration
+    public var displayDuration: EKAttributes.DisplayDuration
     
-    var positionConstraints: EKAttributes.PositionConstraints
+    public var positionConstraints: EKAttributes.PositionConstraints
     
-    var screenInteraction: EKAttributes.UserInteraction
+    public var screenInteraction: EKAttributes.UserInteraction
     
-    var entryInteraction: EKAttributes.UserInteraction
+    public var entryInteraction: EKAttributes.UserInteraction
     
-    var scrollBehaviour: EKAttributes.Scroll
+    public var scrollBehaviour: EKAttributes.Scroll
     
-    var entranceAnimation: EKAttributes.Animation
+    public var entranceAnimation: EKAttributes.Animation
     
-    var exitAnimation: EKAttributes.Animation
+    public var exitAnimation: EKAttributes.Animation
     
 }
 

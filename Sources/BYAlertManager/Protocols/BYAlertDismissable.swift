@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol BYAlertDismissable {
+public protocol BYAlertDismissable {
     
     var dismissButtonAction: (() -> Void)? { get }
 

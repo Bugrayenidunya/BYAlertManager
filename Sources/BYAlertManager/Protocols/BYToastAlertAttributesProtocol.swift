@@ -7,7 +7,7 @@
 
 import SwiftEntryKit
     
-protocol BYToastAlertAttributesProtocol {
+public protocol BYToastAlertAttributesProtocol {
     
     var position: EKAttributes.Position { get }
     
