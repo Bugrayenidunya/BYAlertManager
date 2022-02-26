@@ -6,10 +6,10 @@ import PackageDescription
 let package = Package(
     name: "BYAlertManager",
     platforms: [
-        .macOS(.v12),
-        .iOS(.v15),
-        .tvOS(.v15),
-        .watchOS(.v8)
+        .macOS(.v11),
+        .iOS(.v14),
+        .tvOS(.v14),
+        .watchOS(.v6)
     ],
     products: [
         .library(
