@@ -73,7 +73,9 @@ final class BYToastAlertView: UIView, BYToastAlertViewProtocol {
         descriptionLabel.text = viewModel.content
         
         titlenLabel.font = viewModel.titleFont
+        titlenLabel.textColor = viewModel.titleColor
         descriptionLabel.font = viewModel.contentFont
+        descriptionLabel.textColor = viewModel.contentColor
         backgroundColor = viewModel.backgroundColor
         iconWrapperView.backgroundColor = viewModel.iconBackgroundColor
     }

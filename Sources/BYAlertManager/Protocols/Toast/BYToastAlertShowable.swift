@@ -24,6 +24,10 @@ public protocol BYToastAlertShowable: BYAlertDismissable, BYToastAlertAttributes
     
     var iconBackgroundColor: UIColor { get }
     
+    var titleColor: UIColor { get }
+    
+    var contentColor: UIColor { get }
+    
     var primaryButtonAction: (() -> Void)? { get }
     
     var position: EKAttributes.Position { get }

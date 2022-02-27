@@ -24,6 +24,10 @@ public struct BYToastAlertViewModel: BYToastAlertShowable {
     
     public var iconBackgroundColor: UIColor
     
+    public var titleColor: UIColor
+    
+    public var contentColor: UIColor
+    
     public var dismissButtonAction: (() -> Void)?
     
     public var primaryButtonAction: (() -> Void)?
@@ -59,6 +63,8 @@ public extension BYToastAlertViewModel {
         contentFont: UIFont,
         backgroundColor: UIColor,
         iconBackgroundColor: UIColor,
+        titleColor: UIColor,
+        contentColor: UIColor,
         primaryButtonAction: (() -> Void)?,
         dismissButtonAction: (() -> Void)?
     ) {
@@ -69,6 +75,8 @@ public extension BYToastAlertViewModel {
         self.contentFont = contentFont
         self.backgroundColor = backgroundColor
         self.iconBackgroundColor = iconBackgroundColor
+        self.titleColor = titleColor
+        self.contentColor = contentColor
         self.primaryButtonAction = primaryButtonAction
         self.dismissButtonAction = dismissButtonAction
         position = .top
@@ -96,6 +104,8 @@ public extension BYToastAlertViewModel {
         contentFont: UIFont,
         backgroundColor: UIColor,
         iconBackgroundColor: UIColor,
+        titleColor: UIColor,
+        contentColor: UIColor,
         primaryButtonAction: (() -> Void)?,
         dismissButtonAction: (() -> Void)?,
         attributes: BYToastAlertAttributesProtocol
@@ -107,6 +117,8 @@ public extension BYToastAlertViewModel {
         self.contentFont = contentFont
         self.backgroundColor = backgroundColor
         self.iconBackgroundColor = iconBackgroundColor
+        self.titleColor = titleColor
+        self.contentColor = contentColor
         self.primaryButtonAction = primaryButtonAction
         self.dismissButtonAction = dismissButtonAction
         position = attributes.position
